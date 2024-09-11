@@ -7,7 +7,7 @@
         ],
     };
 
-    let td_class = 'w-full rounded h-full focus:ring focus:ring-blue-600 focus:ring-width-1 focus:outline focus:bg-slate-200 focus:outline-blue-600 bg-transparent px-4 hidden';
+    let td_inp_class = 'w-full rounded h-full focus:ring focus:ring-blue-600 focus:ring-width-1 focus:outline focus:bg-slate-200 focus:outline-blue-600 bg-transparent px-4 hidden';
     let elements = Array(table_array.count).fill(0);
 </script>
 
@@ -31,12 +31,12 @@
                     {#if ii===0}
                         <td data-field={item.name} class="bg-slate-400 whitespace-normal border-2 text-center text-sm font-semibold border-black p-2 sticky left-0 z-10">
                             <label for="{item.name}__template" data-field={item.name} class="p-2"></label>
-                            <input type="text" name={item.name} id='{item.name}__template' class={td_class}>
+                            <input type="text" name={item.name} id='{item.name}__template' class={td_inp_class} autocomplete="off">
                         </td>
                     {:else}
                         <td data-field={item.name} class="bg-slate-300 whitespace-normal border-2 text-sm p-2 border-black" >
                             <label for="{item.name}__template" data-field={item.name} class="p-2"></label>
-                            <input type="text" name={item.name} id='{item.name}__template' class={td_class}>
+                            <input type="text" name={item.name} id='{item.name}__template' class={td_inp_class} autocomplete="off">
                         </td>
                     {/if}
                     {/each}
@@ -47,12 +47,12 @@
                         {#if ii===0}
                             <td data-field={item.name} class="bg-slate-400 whitespace-normal border-2 text-center text-sm font-semibold border-black p-2 sticky left-0 z-10">
                                 <label for="{item.name}__{i}" data-field={item.name} class="p-2"></label>
-                                <input type="text" name={item.name} id='{item.name}__{i}' class={td_class}>
+                                <input type="text" name={item.name} id='{item.name}__{i}' class={td_inp_class}>
                             </td>
                         {:else}
                             <td data-field={item.name} class="bg-slate-300 whitespace-normal border-2 text-sm p-2 border-black" >
                                 <label for="{item.name}__{i}" data-field={item.name} class="p-2"></label>
-                                <input type="text" name={item.name} id='{item.name}__{i}' class={td_class}>
+                                <input type="text" name={item.name} id='{item.name}__{i}' class={td_inp_class}>
                             </td>
                         {/if}
                     {/each}
