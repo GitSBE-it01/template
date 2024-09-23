@@ -1,14 +1,15 @@
 <script>
-    export let table_array={
+    export let table_array= {
         id: '',
         count: 50,
         field: [
             {header: 'test', name:'test_name'}
         ],
     };
-
     let td_inp_class = 'w-full rounded h-full focus:ring focus:ring-blue-600 focus:ring-width-1 focus:outline focus:bg-slate-200 focus:outline-blue-600 bg-transparent px-4 hidden';
     let elements = Array(table_array.count).fill(0);
+
+
 </script>
 
 <div id="{table_array.id}__container" class='h-full w-full'>
@@ -42,7 +43,7 @@
                     {/each}
                 </tr>
                 {#each elements as _, i}
-                    <tr data-id="{table_array.id}__{i}">
+                    <tr data-id="{table_array.id}__{i}" class='hidden'>
                     {#each table_array.field as item, ii}
                         {#if ii===0}
                             <td data-field={item.name} class="bg-slate-400 whitespace-normal border-2 text-center text-sm font-semibold border-black p-2 sticky left-0 z-10">

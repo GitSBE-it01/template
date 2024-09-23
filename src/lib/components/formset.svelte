@@ -3,7 +3,7 @@
         id: '',
         column: 1,
         form: [
-            {field: '', label:'', type:''}
+            {field: '', label:'', type:'', class:''}
         ]
     };
 

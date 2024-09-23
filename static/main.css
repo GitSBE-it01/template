@@ -9,3 +9,156 @@ body {
   background-size: cover;
   cursor: pointer;
 }
+
+.magnifier {
+  background-image: url('./svg/magni_default.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.open {
+  background-image: url('./svg/open_detail.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.open_white {
+  background-image: url('./svg/open_detail_white.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.hide {
+  background-image: url('./svg/hide_detail.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.check {
+  background-image: url('./svg/checkGreen.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.cross {
+  background-image: url('./svg/cross.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.cross_gray {
+  background-image: url('./svg/cross_gray.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.plus_green {
+  background-image: url('./svg/add_default.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.plus {
+  background-image: url('./svg/add_white.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.minus {
+  background-image: url('./svg/minus_non_color.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.minus_red {
+  background-image: url('./svg/minus_red.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.enter {
+  background-image: url('./svg/enter_sign.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow_right {
+  background-image: url('./svg/arrow_right.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow_right_black {
+  background-image: url('./svg/arrow_right_no_color.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow_left {
+  background-image: url('./svg/arrow_left.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.edit {
+  background-image: url('./svg/edit_dflt.svg');
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@keyframes loading {
+  0% {
+      transform: rotate(0deg); 
+  }
+  50% {
+      transform: rotate(180deg); 
+  }
+  100% {
+      transform: rotate(360deg); 
+  }
+}
+
+.loading {
+  width: 8rem; 
+  height: 8rem;
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  animation: loading 1.8s linear infinite; 
+  background: url('./svg/load_default.svg');
+  background-size: cover; 
+}
+
+.loading2 {
+  width: 8rem; 
+  height: 8rem;
+  animation: loading 1.8s linear infinite; 
+  background: url('./svg/load_default.svg');
+  background-size: cover; 
+}
+
+.load {
+  width: 6rem; 
+  height: 6rem;
+  animation: loading 1.8s linear infinite; 
+  background: url('./svg/load_default.svg');
+  background-size: cover; 
+}
+
+.load_up {
+  z-index: 50;
+  width: 6rem; 
+  height: 6rem;
+  animation: loading 1.8s linear infinite; 
+  background: url('./svg/load_default.svg');
+  background-size: cover; 
+}

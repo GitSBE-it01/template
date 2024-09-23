@@ -8,8 +8,8 @@ const config = {
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
+			pages: '//192.168.2.103/xampp/htdocs/wbd/dev',
+			assets: '//192.168.2.103/xampp/htdocs/wbd/dev',
 			fallback: undefined,
 			precompress: false,
 			strict: true
